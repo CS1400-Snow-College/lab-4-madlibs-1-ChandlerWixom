@@ -1,4 +1,6 @@
 ﻿// Chandler Wixom, 2/19/2025, Lab 4 Madlibs
 
-Console.WriteLine("This is the game Mad Libs, you will be requested to provide differnt types of words\nThese words will then be combined in a pre-existing sentance to make a funny story\nEnter the requested word types");
+Console.WriteLine("This is the game Mad Libs, you will be requested to provide differnt types of words\nThese words will then be combined in a pre-existing sentance to make a funny story\nEnter the requested word types:");
 
+string originalStory = "A vacation is when you take a trip to some (adjective) place with your (adjective) family. Usually, you go to some place that is near a/an (noun) or up on a/an (noun). A good vacation place is one where you can ride (plural noun) or play (game) or go hunting for (plural noun). I like to spend my time (verb ending in “ing”) or (verb ending in “ing”). When parents go on a vacation, they spend their time eating three (plural noun) a day, and fathers play golf, and mothers sit around (verb ending in “ing”) Last summer, my little brother fell in a/an (noun) and got poison (plant) all over his (part of the body) My family is going to go to (place) and I will practice (verb ending in “ing”) Parents need vacations more than kids because parents are always very (adjective) and because they have to work (number) hours every day all year making enough (plural noun) to pay for the vacation.";
+string[] storyWords = originalStory.Split(" ");
