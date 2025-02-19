@@ -18,9 +18,9 @@ for (int i = 0; i < storyWords.Length; i++)
         Console.WriteLine($"Please provide a {storyWords[i].Replace('.', ' ')}");
         finalStory = finalStory + Console.ReadLine();
         if (storyWords[i].EndsWith('.'))
-        finalStory = finalStory + ". ";
-        else 
-        finalStory = finalStory + " ";
+            finalStory = finalStory + ". ";
+        else
+            finalStory = finalStory + " ";
     }
     else if (storyWords[i].Substring(0, 1) == "(" && !storyWords[i].Contains(")")) // if its starts with ( but doesnt end in ) it keeps adding till it finds something that ends in )
     {
@@ -32,12 +32,13 @@ for (int i = 0; i < storyWords.Length; i++)
             i++;
         }
         tempQuest = tempQuest + storyWords[i];
-        Console.WriteLine($"Please provide a {tempQuest}");
+        Console.WriteLine($"Please provide a {tempQuest.Replace('.', ' ')}");
         finalStory = finalStory + Console.ReadLine();
         if (storyWords[i].EndsWith('.'))
-        finalStory = finalStory + ". ";
-        else 
-        finalStory = finalStory + " ";
+            finalStory = finalStory + ". ";
+        else
+            finalStory = finalStory + " ";
+
     }
     else // otherwise its added to the story directly
     {
